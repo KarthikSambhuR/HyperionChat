@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let streamingChatId = null;
     const CHATS_STORAGE_KEY = 'gemini_chats';
     const CURRENT_CHAT_ID_STORAGE_KEY = 'gemini_current_chat_id';
-    const BACKEND_URL = 'https://backend.karthiksambhu123.workers.dev';
+    const BACKEND_URL = 'https://backend.example.workers.dev'; // REPLACE WITH WORKER URL
     const md = window.markdownit({
         html: true,
         xhtmlOut: false,
