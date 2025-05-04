@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Gemini Chat - Aurora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+</head>
+<body>
+    <div class="app-background"></div>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button id="new-chat-btn" class="sidebar-button">
+                    <i class="fas fa-plus-sparkle"></i> New Chat
+                </button>
+            </div>
+            <nav class="chat-list-container">
+                <ul id="chat-list" class="chat-list">
+                    
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                 <div class="model-selector control-group">
+                     <label for="model-select"><i class="fas fa-microchip"></i> Model:</label>
+                    <select id="model-select">
+                        <option value="gemini-2.0-flash">Gemini 2.0 Flash</option>
+                        <option value="gemini-2.0-flash-lite">Gemini 2.0 Flash-Lite</option>
+                        <option value="gemini-2.5-pro-exp-03-25">Gemini 2.5 Exp</option>
+                        <option value="gemini-2.5-flash-preview-04-17">Gemini 2.5 Flash Preview</option>
+                        <option value="gemini-1.5-flash-8b">Gemini 1.5 Flash-8B</option>
+                        <option value="gemini-1.5-flash">Gemini 1.5 Flash</option>
+                        <option value="gemini-1.5-pro">Gemini 1.5 Pro</option>
+                    </select>
+                </div>
+                 <div class="footer-branding">
+                    Powered by Gemini
+                 </div>
+            </div>
+        </aside>
+        <main class="chat-area">
+            <div class="chat-header">
+                <button id="sidebar-toggle" class="sidebar-toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2 id="chat-title">New Chat</h2>
+                 <div class="header-actions">
+                 </div>
+            </div>
+            <div id="message-list" class="message-list">
+                
+                 <div class="message welcome-message">
+                     <div class="message-avatar"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <div class="message-content">
+                         <div class="text-content-inner">
+                            <p>Welcome to the Gemini Aurora Chat! ✨</p>
+                            <p>Select a model and start conversing. Attach images <i class="fas fa-paperclip"></i> to provide visual context.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                 <div id="image-preview-container" class="image-preview-container hidden">
+                     
+                 </div>
+                <form id="chat-form" class="chat-form">
+                    <button type="button" id="attach-image-btn" class="input-button" title="Attach Image">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <input type="file" id="image-input" accept="image/*" style="display: none;">
+                    <textarea id="prompt-input" placeholder="Send a message (Shift+Enter for new line)..." rows="1"></textarea>
+                    <button type="submit" id="send-button" class="input-button send-btn" title="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>   
+    <script src="script.js"></script>
+</body>
+</html>
