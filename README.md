@@ -79,7 +79,7 @@ wrangler pages publish . --project-name=ZenithChat
 
 ## 📸 UI Preview
 
-Here’s a look at Hyperion Chat in action:
+Here’s a look at Zenith Chat in action:
 
 <div align="center">
   <table>
