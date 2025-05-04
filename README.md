@@ -67,7 +67,7 @@ wrangler pages dev
 ### 4. Deploy to Cloudflare Pages
 
 ```bash
-wrangler pages publish . --project-name=hyperion-chat
+wrangler pages publish . --project-name=ZenithChat
 ```
 
 ## 🧪 Tech Stack
