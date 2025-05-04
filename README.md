@@ -1,6 +1,6 @@
 # 🌌 Zenith Chat
 
-**Hyperion Chat** is a blazing-fast, serverless, no-auth AI chat app powered by Gemini models. It supports rich markdown formatting, syntax highlighting, image uploads, and even generates dynamic titles for each chat session. Everything is stored locally, ensuring privacy and speed.
+**Zenith Chat** is a blazing-fast, serverless, no-auth AI chat app powered by Gemini models. It supports rich markdown formatting, syntax highlighting, image uploads, and even generates dynamic titles for each chat session. Everything is stored locally, ensuring privacy and speed.
 
 > 🛠 Built with: `HTML`, `CSS`, `JavaScript`, `Cloudflare Workers`, and `Cloudflare Pages`.
 
